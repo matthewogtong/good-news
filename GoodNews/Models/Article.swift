@@ -7,9 +7,15 @@
 
 import Foundation
 
+struct Result: Decodable {
+    
+    let articles: [Article]
+    
+}
+
 struct Article: Decodable {
     
     let title: String
-    let descriiption: String
+    let description: String
     
 }
