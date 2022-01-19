@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Result: Decodable {
+struct ArticleList: Decodable {
     
     let articles: [Article]
     

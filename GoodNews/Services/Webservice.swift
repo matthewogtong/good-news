@@ -40,7 +40,7 @@ class Webservice {
         
         do {
             
-            let decodedData = try decoder.decode(Result.self, from: data)
+            let decodedData = try decoder.decode(ArticleList.self, from: data)
             
             let articleArr = decodedData.articles
             
