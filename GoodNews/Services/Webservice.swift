@@ -22,8 +22,8 @@ class Webservice {
                 print(error.localizedDescription)
             } else {
                 if let data = data {
-                    if let article = self.parseJSON(data: data) {
-                        print(article)
+                    if let articles = self.parseJSON(data: data) {
+                        print(articles)
                     }
                 }
             }
