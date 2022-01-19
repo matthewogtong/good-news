@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="DWI-T7-3Is">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="DWI-T7-3Is" customClass="ArticleTableViewCell" customModule="GoodNews" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DWI-T7-3Is" id="D3q-mp-Xuf">
@@ -48,6 +48,10 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="hF4-XX-dvi" secondAttribute="trailing" id="bc2-77-h6N"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="TyM-2M-s8Y" id="TMY-pk-m4p"/>
+                                    <outlet property="titleLabel" destination="AFs-sG-9v8" id="Qrf-Tx-DGE"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
