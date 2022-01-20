@@ -12,7 +12,7 @@ class Webservice {
     // func getArticles(url: URL, completion: ([Article]?) -> ())
     // * Do we need completion paremeter or should we seperate it
     
-    func getArticles(url: URL) {
+    func getArticles(url: URL, completion: @escaping ([Article]?) -> Void) {
         
         let session = URLSession.init(configuration: .default)
         
@@ -22,8 +22,8 @@ class Webservice {
                 print(error.localizedDescription)
             } else {
                 if let data = data {
-                    if let articles = self.parseJSON(data: data) {
-                        print(articles)
+                    if let articleList = self.parseJSON(data: data) {
+                        completion(articleList.articles)
                     }
                 }
             }
@@ -34,7 +34,7 @@ class Webservice {
         
     }
     
-    func parseJSON(data: Data) -> [Article]? {
+    func parseJSON(data: Data) -> ArticleList? {
         
         let decoder = JSONDecoder()
         
@@ -42,9 +42,7 @@ class Webservice {
             
             let decodedData = try decoder.decode(ArticleList.self, from: data)
             
-            let articleArr = decodedData.articles
-            
-            return articleArr
+            return decodedData
             
         } catch {
             print(error.localizedDescription)
