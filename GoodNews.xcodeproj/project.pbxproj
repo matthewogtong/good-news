@@ -16,6 +16,7 @@
 		FE2BF5FD27965A8E00ED0FEC /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2BF5FC27965A8E00ED0FEC /* Webservice.swift */; };
 		FE2BF6002796FC0200ED0FEC /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2BF5FF2796FC0200ED0FEC /* Article.swift */; };
 		FE8BB1372798C60B000759B8 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8BB1362798C60B000759B8 /* ArticleTableViewCell.swift */; };
+		FE8BB1392799C83A000759B8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8BB1382799C83A000759B8 /* Constants.swift */; };
 		FEE1DB7F27988F3B00C315C4 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE1DB7E27988F3B00C315C4 /* ArticleViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		FE2BF5FC27965A8E00ED0FEC /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		FE2BF5FF2796FC0200ED0FEC /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		FE8BB1362798C60B000759B8 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		FE8BB1382799C83A000759B8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FEE1DB7E27988F3B00C315C4 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +73,7 @@
 				FE2BF5F82796525100ED0FEC /* Controllers */,
 				FE2BF5E42796500D00ED0FEC /* AppDelegate.swift */,
 				FE2BF5E62796500D00ED0FEC /* SceneDelegate.swift */,
+				FE8BB1382799C83A000759B8 /* Constants.swift */,
 				FE2BF5EA2796500D00ED0FEC /* Main.storyboard */,
 				FE2BF5ED2796500E00ED0FEC /* Assets.xcassets */,
 				FE2BF5EF2796500E00ED0FEC /* LaunchScreen.storyboard */,
@@ -197,6 +200,7 @@
 				FE2BF5E72796500D00ED0FEC /* SceneDelegate.swift in Sources */,
 				FE8BB1372798C60B000759B8 /* ArticleTableViewCell.swift in Sources */,
 				FE2BF6002796FC0200ED0FEC /* Article.swift in Sources */,
+				FE8BB1392799C83A000759B8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

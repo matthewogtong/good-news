@@ -17,7 +17,7 @@ struct ArticleListViewModel {
 
 extension ArticleListViewModel {
     
-    var numOfSections: Int {
+    var numberOfSections: Int {
         return 1
     }
     
